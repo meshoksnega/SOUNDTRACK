@@ -84,6 +84,27 @@ button {
   z-index: 12;
   border-radius: 50%;
 }
+
+.rectangle-copy {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white; /* Змінити на бажаний колір */
+  color: white; /* Колір тексту */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Додаємо плавний перехід */
+}
+
+.rectangle-copy:hover {
+  background-color: white; /* Колір при наведенні */
+}
+
+.rectangle-copy:active {
+  transform: scale(0.95); /* Зменшення кнопки при натисканні */
+  background-color: white; /* Колір при натисканні */
+}
+
+
 .courses {
   display: flex;
   align-items: flex-start;
