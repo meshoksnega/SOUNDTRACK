@@ -4,7 +4,6 @@
     "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
     "Source Han Sans CN", sans-serif;
   }
-        /* Отключение выделения текста */
         body {
             -webkit-user-select: none;
             -moz-user-select: none;
@@ -88,20 +87,20 @@ button {
 .rectangle-copy {
   display: inline-block;
   padding: 10px 20px;
-  background-color: white; /* Змінити на бажаний колір */
-  color: white; /* Колір тексту */
+  background-color: white;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.1s; /* Додаємо плавний перехід */
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 .rectangle-copy:hover {
-  background-color: white; /* Колір при наведенні */
+  background-color: white;
 }
 
 .rectangle-copy:active {
-  transform: scale(0.95); /* Зменшення кнопки при натисканні */
-  background-color: white; /* Колір при натисканні */
+  transform: scale(0.95);
+  background-color: white;
 }
 
 
@@ -140,6 +139,14 @@ button {
   white-space: nowrap;
   letter-spacing: 0.5px;
   z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.how-it-works:hover {
+  transform: scale(1.1);
+  color: #dba134;
+
 }
 .library {
   display: flex;
@@ -158,6 +165,14 @@ button {
   white-space: nowrap;
   letter-spacing: 0.5px;
   z-index: 3;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.library:hover, .pricing:hover {
+  transform: scale(1.1);
+  color: #dba134;
+
 }
 .pricing {
   display: flex;
@@ -194,6 +209,14 @@ button {
   white-space: nowrap;
   letter-spacing: 0.5px;
   z-index: 9;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.register-1:hover, .c:hover {
+  transform: scale(1.1);
+  color: #dba134;
+
 }
 .c {
   display: flex;
@@ -260,7 +283,7 @@ button {
   z-index: 159;
   overflow: hidden;
 }
-.rectangle-2 {
+.Krug1 {
   position: relative;
   width: 156px;
   height: 50px;
@@ -288,7 +311,7 @@ button {
   letter-spacing: 0.3px;
   z-index: 153;
 }
-.rectangle-4 {
+.Krug2 {
   position: relative;
   width: 319px;
   height: 50px;
@@ -365,7 +388,7 @@ button {
   letter-spacing: 0.35px;
   z-index: 143;
 }
-.rectangle-copy-6 {
+.Krug3 {
   position: absolute;
   width: 4.03%;
   height: 5.54%;
@@ -492,7 +515,7 @@ button {
   letter-spacing: 0.35px;
   z-index: 164;
 }
-.rectangle-copy-d {
+.Krug4 {
   position: absolute;
   width: 4.13%;
   height: 7.39%;
@@ -521,7 +544,7 @@ button {
   letter-spacing: 0.3px;
   z-index: 168;
 }
-.rectangle-f {
+.video-button {
   position: absolute;
   width: 33.76%;
   height: 36.47%;
@@ -534,6 +557,11 @@ button {
   border: none;
   z-index: 172;
   box-shadow: 0 30px 80px 0 rgba(47, 65, 88, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.video-button:hover {
+  transform: scale(1.1);
 }
 .flex-column-e {
   position: absolute;
@@ -625,7 +653,7 @@ button {
   opacity: 0.5;
   z-index: 167;
 }
-.group-3 {
+.browse-case {
   position: relative;
   width: 1179.217px;
   height: 144px;
@@ -718,7 +746,7 @@ button {
   opacity: 0.5;
   z-index: 183;
 }
-.img-8 {
+.browse-case-line {
   position: relative;
   width: 600px;
   height: 1px;
@@ -728,7 +756,7 @@ button {
   background-size: 100% 100%;
   z-index: 186;
 }
-.wrapper-2 {
+.browse-case2 {
   position: relative;
   width: 1179.217px;
   height: 109px;
@@ -788,8 +816,9 @@ button {
   white-space: nowrap;
   opacity: 0.34;
   z-index: 190;
+  
 }
-.img-9 {
+.pic-a4 {
   position: absolute;
   width: 2.05%;
   height: 17.99%;
@@ -799,6 +828,11 @@ button {
     no-repeat center;
   background-size: 100% 100%;
   z-index: 191;
+  transition: transform 0.3s ease;
+}
+
+.pic-a4:hover {
+  transform: scale(1.1);
 }
 .text-1c {
   display: block;
@@ -816,7 +850,7 @@ button {
   opacity: 0.5;
   z-index: 189;
 }
-.pic-9 {
+.Nothing1 {
   position: relative;
   width: 600px;
   height: 1px;
@@ -869,7 +903,7 @@ button {
   opacity: 0.34;
   z-index: 196;
 }
-.img-a {
+.pic-a2 {
   position: absolute;
   width: 4.03%;
   height: 28.01%;
@@ -879,6 +913,11 @@ button {
     no-repeat center;
   background-size: 100% 100%;
   z-index: 197;
+  transition: transform 0.3s ease;
+}
+
+.pic-a2:hover {
+  transform: scale(1.1);
 }
 .text-1f {
   display: block;
@@ -948,6 +987,7 @@ button {
   white-space: nowrap;
   opacity: 0.34;
   z-index: 203;
+  
 }
 .img-c {
   position: absolute;
@@ -959,6 +999,11 @@ button {
     no-repeat center;
   background-size: 100% 100%;
   z-index: 204;
+  transition: transform 0.3s ease;
+}
+
+.img-c:hover {
+  transform: scale(1.1);
 }
 .text-22 {
   display: block;
@@ -986,7 +1031,7 @@ button {
   background-size: 100% 100%;
   z-index: 205;
 }
-.group-4 {
+.news-portal {
   position: relative;
   width: 600.217px;
   height: 70px;
@@ -1039,6 +1084,12 @@ button {
     no-repeat center;
   background-size: 100% 100%;
   z-index: 210;
+  transition: transform 0.3s ease;
+}
+
+.pic-a:hover {
+  transform: scale(1.1);
+
 }
 .text-25 {
   display: block;
@@ -1122,7 +1173,7 @@ button {
   left: 5.56%;
   z-index: 134;
 }
-.img-e {
+.reg-email {
   position: absolute;
   width: 61.91%;
   height: 51.64%;
@@ -1132,6 +1183,7 @@ button {
     no-repeat center;
   background-size: 100% 100%;
   z-index: 134;
+  
 }
 .wrapper-4 {
   position: relative;
